@@ -1,0 +1,14 @@
+services:
+  dev:
+    user: "node"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/usr/src/snowpack-bug-repro/src
+    ports:
+      - 8080:8080
+
+volumes:
+  node_modules:
+  build:
