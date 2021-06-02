@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./src:/usr/src/snowpack-bug-repro/src
+      - ./public:/usr/src/snowpack-bug-repo/public
     ports:
       - 8080:8080
 
