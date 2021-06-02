@@ -7,6 +7,8 @@ WORKDIR /usr/src/snowpack-bug-repro
 COPY package*.json ./
 COPY snowpack.config.mjs ./
 
+RUN npm install -g esbuild
+
 RUN chown -R node:node /usr/src/snowpack-bug-repro
 
 USER node
