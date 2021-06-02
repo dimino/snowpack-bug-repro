@@ -5,6 +5,7 @@ To reproduce:
 ```bash
 git clone git@github.com:dimino/snowpack-bug-repro.git
 
+cd snowpack-bug-repo
 docker-compose build dev
 docker-compose up dev
 ```
